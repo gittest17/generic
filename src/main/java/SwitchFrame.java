@@ -1,8 +1,6 @@
-
-
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.DynamicTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +23,7 @@ public class SwitchFrame {
         driver.get(baseUrl);
     }
 
-    @Test
+    @DynamicTest
     public void test() throws InterruptedException {
         Thread.sleep(3000);
         // Switch to frame by Id
